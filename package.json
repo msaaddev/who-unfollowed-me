@@ -1,0 +1,25 @@
+{
+    "name": "who-unfollowed-me",
+    "version": "1.0.0",
+    "description": "A CLI that lets you know who unfollowed you in the past five days",
+    "license": "MIT",
+    "repository": "https://github.com/msaaddev/who-unfollowed-me",
+    "main": "index.js",
+    "author": {
+        "name": "Saad Irfan",
+        "email": "mrsaadirfan@gmail.com",
+        "url": "https://twitter.com/msaaddev"
+    },
+    "bin": {
+        "unfollow": "index.js"
+    },
+    "files": [
+        "index.js",
+        "utils/*"
+    ],
+    "keywords": [
+        "unfollow",
+        "github"
+    ],
+    "dependencies": {}
+}
