@@ -1,7 +1,15 @@
-const { cyan, dim } = require('chalk');
-const io = require('console-read-write');
+const chalk = require('chalk');
 
 module.exports = () => {
-    io.write(dim(cyan('\nStar ⭐️ the repo: https://github.com/msaaddev/who-unfollowed-me')));
-    io.write(dim(cyan('Connect with me: https://twitter.com/MSaaddev/\n')));
+    console.log('');
+    console.log(
+        chalk.hex('#FAD000').inverse(' STAR '),
+        'the CLI -> ',
+        chalk.dim('https://github.com/msaaddev/who-unfollowed-me')
+    );
+    console.log(
+        chalk.hex('#1da1f2').inverse(' CONNECT '),
+        'with me on Twitter -> ',
+        chalk.dim('https://twitter.com/msaaddev/\n')
+    );
 };
