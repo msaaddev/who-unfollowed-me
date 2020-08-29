@@ -1,4 +1,5 @@
-const followerList = require('../data/follower');
+const pwd = process.cwd();
+const followerList = require(`${pwd}/follower`);
 const table = require('./table');
 const chalk = require('chalk');
 const symbols = require('log-symbols');

@@ -32,14 +32,14 @@ module.exports = async () => {
         console.log('');
         display(followers);
 
-        jsonFile.writeFile('./data/follower.json', followers, err => {});
+        jsonFile.writeFile(`./follower.json`, followers, err => {});
     } catch (error) {
         spinner.fail();
         if (error.response.status === 404) {
             console.log('');
             console.log(symbols.error, chalk.hex('#FF0000').inverse(' ERROR '), 'Invalid username');
             const temp = [];
-            jsonFile.writeFile('./data/user.json', temp, err => {});
+            jsonFile.writeFile(`./user.json`, temp, err => {});
         } else {
             console.log('');
             console.log(

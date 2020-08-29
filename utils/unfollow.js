@@ -1,4 +1,5 @@
-const list = require('../data/follower.json');
+const pwd = process.cwd();
+const list = require(`${pwd}/follower.json`);
 
 module.exports = followers => {
     if (list.length === 0) return;
