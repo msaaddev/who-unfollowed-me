@@ -23,7 +23,7 @@ const pkgJSON = require('./package.json');
         color: `#000000`,
         bold: true,
         clear: true,
-        version: `1.0.0`,
+        version: `${pkgJSON.version}`,
     });
 
     await cli();
