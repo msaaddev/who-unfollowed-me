@@ -7,6 +7,7 @@ module.exports = async () => {
         io.write('Enter your GitHub username: ');
         const username = await io.read();
         jsonFile.writeFile('./data/user.json', username, err => {});
+        console.log('');
         return username;
     } else return user;
 };

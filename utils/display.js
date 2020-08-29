@@ -17,7 +17,7 @@ module.exports = followers => {
         } else {
             console.log(
                 symbols.info,
-                chalk.hex('#FAD000').inverse(' INFO '),
+                chalk.hex('#5E3AFF').inverse(' INFO '),
                 'Yeay! No one has unfollowed you recently.'
             );
         }
