@@ -7,7 +7,7 @@ try {
     module.exports = () => {
         if (user.length > 1) {
             return user;
-        } else throw err;
+        } else throw error;
     };
 } catch (error) {
     module.exports = async () => {
