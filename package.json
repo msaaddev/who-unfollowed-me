@@ -1,6 +1,6 @@
 {
     "name": "who-unfollowed-me",
-    "version": "1.4.6",
+    "version": "1.4.7",
     "description": "A CLI that let's you know who recently unfollowed you on GitHub.",
     "license": "MIT",
     "repository": "https://github.com/msaaddev/who-unfollowed-me",
