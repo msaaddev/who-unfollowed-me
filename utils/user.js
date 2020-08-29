@@ -4,7 +4,11 @@ const pwd = process.cwd();
 
 try {
     const user = require(`${pwd}/user`);
-    module.exports = () => user;
+    module.exports = () => {
+        if (user.length > 1) {
+            return user;
+        } else throw err;
+    };
 } catch (error) {
     module.exports = async () => {
         io.write('Enter your GitHub username: ');
