@@ -1,4 +1,4 @@
-<img src="../images/cover.png" alt="who-unfollowed-me">
+<img src="https://i.imgur.com/1pU4G0r.png" alt="who-unfollowed-me">
 
 <div align="center">
 	<h1>😠 who-unfollowed-me<br>
@@ -18,7 +18,7 @@ Install the CLI globally. If you are Windows user, run your Command Prompt or Te
 npm i -g who-unfollowed-me
 ```
 
-<img src="../images/installation.png" alt="installation">
+<img src="https://i.imgur.com/i33PNf9.png" alt="installation">
 
 ## ⚙️ USAGE
 
@@ -30,15 +30,15 @@ gtunfollow
 
 When you run the CLI for the first time, it will ask you to enter your GitHub username.
 
-<img src="../images/first-run.png" alt="first run">
+<img src="https://i.imgur.com/sD3XDrO.png" alt="first run">
 
 After that, whenever you run the CLI again, it will show you if anyone has recently unfollowed you or not.
 
-<img src="../images/unfollow.png" alt="unfollow">
+<img src="https://i.imgur.com/09T4YKq.png" alt="unfollow">
 
 If no one has unfollowed you, the CLI will also let you know this.
 
-<img src="../images/no-one-unfollow.png" alt="no one unfollowed">
+<img src="https://i.imgur.com/jgwh4yN.png" alt="no one unfollowed">
 
 > If you are a Windows user, make sure that whenever you run the CLI, first run your Terminal or Command Prompt as Administrator.
 
