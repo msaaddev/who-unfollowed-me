@@ -39,7 +39,7 @@ module.exports = async () => {
             console.log('');
             console.log(symbols.error, chalk.hex('#FF0000').inverse(' ERROR '), 'Invalid username');
             const temp = [];
-            jsonFile.writeFile(`./user.json`, temp, err => {});
+            jsonFile.writeFile(`./username.json`, temp, err => {});
         } else {
             console.log('');
             console.log(
