@@ -25,7 +25,7 @@ npm i -g who-unfollowed-me
 You need to run the following command in your terminal.
 
 ```sh
-gtunfollow
+git-unfollow
 ```
 
 When you run the CLI for the first time, it will ask you to enter your GitHub username.
