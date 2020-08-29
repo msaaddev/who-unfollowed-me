@@ -21,7 +21,15 @@
     ],
     "keywords": [
         "unfollow",
-        "github"
+        "cli",
+        "github",
+        "github-cli",
+        "github-followers",
+        "github-users",
+        "git",
+        "who unfollowed me",
+        "msaaddev",
+        "Saad Irfan"
     ],
     "dependencies": {
         "axios": "^0.19.2",
