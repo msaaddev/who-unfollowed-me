@@ -12,7 +12,7 @@
 
 ## 🎩 INSTALLATION
 
-Install the CLI globally. If you are windows user, run your command prompt/terminal as administrator. If you are macOS user, add `sudo` before the following command.
+Install the CLI globally. If you are Windows user, run your Command Prompt or Terminal as Administrator. If you are macOS user, add `sudo` before the following command.
 
 ```sh
 npm i -g who-unfollowed-me
@@ -38,6 +38,8 @@ After that, whenever you run the CLI again, it will show you if anyone has recen
 If no one has unfollowed you, the CLI will also let you know this.
 
 ![no one unfollowed](images/no-one-unfollow.png)
+
+> If you are a Windows user, make sure that whenever you run the CLI, first run your Terminal or Command Prompt as Administrator.
 
 ## 👨🏻‍💻 AUTHOR
 
