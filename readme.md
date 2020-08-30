@@ -10,6 +10,8 @@
 
 > A CLI that let's you know who recently unfollowed you on GitHub.
 
+[![Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=247477&theme=dark)](https://www.producthunt.com/posts/who-unfollowed-me-github?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-who-unfollowed-me-github)
+
 ## 🎩 INSTALLATION
 
 Install the CLI globally. If you are Windows user, run your Command Prompt or Terminal as Administrator. If you are macOS user, add `sudo` before the following command.
