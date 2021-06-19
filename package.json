@@ -1,46 +1,50 @@
 {
-    "name": "who-unfollowed-me",
-    "version": "1.4.8",
-    "description": "A CLI that let's you know who recently unfollowed you on GitHub.",
-    "license": "MIT",
-    "repository": "https://github.com/msaaddev/who-unfollowed-me",
-    "main": "index.js",
-    "author": {
-        "name": "Saad Irfan",
-        "email": "mrsaadirfan@gmail.com",
-        "url": "https://twitter.com/msaaddev"
-    },
-    "bin": {
-        "unfollow": "index.js",
-        "git-unfollow": "index.js"
-    },
-    "files": [
-        "index.js",
-        "utils/*",
-        "follower.json",
-        "user.json"
-    ],
-    "keywords": [
-        "unfollow",
-        "cli",
-        "github",
-        "github-cli",
-        "github-followers",
-        "github-users",
-        "git",
-        "who unfollowed me",
-        "msaaddev",
-        "Saad Irfan"
-    ],
-    "dependencies": {
-        "axios": "^0.19.2",
-        "chalk": "^4.1.0",
-        "cli-table": "^0.3.1",
-        "cli-welcome": "^2.2.2",
-        "colors": "^1.4.0",
-        "console-read-write": "^0.1.1",
-        "jsonfile": "^6.0.1",
-        "log-symbols": "^4.0.0",
-        "ora": "^5.0.0"
-    }
+	"name": "who-unfollowed-me",
+	"version": "1.4.8",
+	"description": "A CLI that let's you know who recently unfollowed you on GitHub.",
+	"license": "MIT",
+	"repository": "https://github.com/msaaddev/who-unfollowed-me",
+	"main": "index.js",
+	"author": {
+		"name": "Saad Irfan",
+		"email": "mrsaadirfan@gmail.com",
+		"url": "https://twitter.com/msaaddev"
+	},
+	"bin": {
+		"unfollow": "index.js",
+		"git-unfollow": "index.js"
+	},
+	"files": [
+		"index.js",
+		"utils/*",
+		"follower.json",
+		"user.json"
+	],
+	"keywords": [
+		"unfollow",
+		"cli",
+		"github",
+		"github-cli",
+		"github-followers",
+		"github-users",
+		"git",
+		"who unfollowed me",
+		"msaaddev",
+		"Saad Irfan"
+	],
+	"dependencies": {
+		"axios": "^0.19.2",
+		"chalk": "^4.1.0",
+		"cli-table": "^0.3.1",
+		"cli-welcome": "^2.2.2",
+		"colors": "^1.4.0",
+		"console-read-write": "^0.1.1",
+		"jsonfile": "^6.0.1",
+		"log-symbols": "^4.0.0",
+		"ora": "^5.0.0"
+	},
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\"",
+		"test": "node test.js"
+	}
 }
