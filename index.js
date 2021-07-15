@@ -15,18 +15,18 @@ const end = require('./utils/end');
 const pkgJSON = require('./package.json');
 
 (module.exports = async () => {
-    welcome({
-        title: `Who Unfollowed Me — GitHub`,
-        tagLine: `by ${pkgJSON.author.name}`,
-        description: `${pkgJSON.description}`,
-        bgColor: `#6cc644`,
-        color: `#000000`,
-        bold: true,
-        clear: true,
-        version: `${pkgJSON.version}`,
-    });
+	welcome({
+		title: `Who Unfollowed Me — GitHub`,
+		tagLine: `by ${pkgJSON.author.name}`,
+		description: `${pkgJSON.description}`,
+		bgColor: `#6cc644`,
+		color: `#000000`,
+		bold: true,
+		clear: true,
+		version: `${pkgJSON.version}`
+	});
 
-    await cli();
+	await cli();
 
-    end();
+	end();
 })();

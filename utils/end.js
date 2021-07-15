@@ -1,15 +1,24 @@
 const chalk = require('chalk');
+const end = require('exit-cli');
+const pkgJSON = require('../package.json');
+const log = require('log-symbols');
 
-module.exports = () => {
-    console.log('');
-    console.log(
-        chalk.hex('#FAD000').inverse(' STAR '),
-        'the CLI -> ',
-        chalk.dim('https://github.com/msaaddev/who-unfollowed-me')
-    );
-    console.log(
-        chalk.hex('#1da1f2').inverse(' CONNECT '),
-        'with me on Twitter -> ',
-        chalk.dim('https://twitter.com/msaaddev/\n')
-    );
+module.exports = async () => {
+	try {
+		await end({
+			github: `https://github.com/msaaddev/who-unfollowed-me`,
+			twitter: `https://twitter.com/msaaddev`,
+			pkgJSON
+		});
+	} catch (err) {
+		console.log(err);
+	}
+
+	console.log();
+	console.log(
+		`${log.info} ${chalk.dim(
+			'Liked my work?! Nominate @msaaddev for GitHub star: https://stars.github.com'
+		)}`
+	);
+	console.log();
 };
