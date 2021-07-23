@@ -64,6 +64,10 @@ Howdy, you! This is [Saad Irfan](http://msaad.dev/), an aspiring JavaScript deve
 </div>
 <br>
 
+## ⚡️ Other Projects
+
+I have curated a [detailed list](https://github.com/msaaddev/open-source) of all the open-source projects I have authored. Do take out a moment and take a look.
+
 ## 🔑 LICENSE
 
 - MIT
