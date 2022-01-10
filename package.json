@@ -37,7 +37,7 @@
 		"chalk": "^4.1.0",
 		"cli-table": "^0.3.1",
 		"cli-welcome": "^2.2.2",
-		"colors": "^1.4.0",
+		"colors": "1.4.0",
 		"enquirer": "^2.3.6",
 		"exit-cli": "^1.0.3",
 		"jsonfile": "^6.0.1",
