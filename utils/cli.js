@@ -35,22 +35,13 @@ module.exports = async () => {
 		jsonFile.writeFile(`./follower.json`, followers, err => {});
 	} catch (error) {
 		spinner.fail();
-		if (error.response.status === 404) {
-			console.log('');
-			console.log(
-				symbols.error,
-				chalk.hex('#FF0000').inverse(' ERROR '),
-				'Invalid username'
-			);
-			const temp = [];
-			jsonFile.writeFile(`./username.json`, temp, err => {});
-		} else {
-			console.log('');
-			console.log(
-				symbols.warning,
-				chalk.hex('#FF0000').inverse(' WARNING '),
-				'Try again later!'
-			);
-		}
+		console.log('');
+		console.log(
+			symbols.warning,
+			chalk.hex('#FF0000').inverse(' WARNING '),
+			'Try again later!'
+		);
+		const temp = [];
+		jsonFile.writeFile(`./username.json`, temp, err => {});
 	}
 };
