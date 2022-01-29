@@ -33,7 +33,7 @@
 		"Saad Irfan"
 	],
 	"dependencies": {
-		"axios": "^0.19.2",
+		"axios": "^0.25.0",
 		"chalk": "^4.1.0",
 		"cli-table": "^0.3.1",
 		"cli-welcome": "^2.2.2",
