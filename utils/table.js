@@ -1,5 +1,4 @@
 const cliTable = require('cli-table');
-const colors = require('colors');
 
 module.exports = data => {
 	const table = new cliTable({

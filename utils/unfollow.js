@@ -1,18 +1,30 @@
-const pwd = process.cwd();
-try {
-	const list = require(`${pwd}/follower.json`);
+const fs = require('fs');
+const path = require('path');
 
-	module.exports = followers => {
-		if (list.length === 0) return;
+function loadFollowers(filePath) {
+	try {
+		const absolutePath = path.resolve(process.cwd(), filePath);
+		const data = fs.readFileSync(absolutePath, 'utf-8');
+		return JSON.parse(data);
+	} catch {}
+}
 
-		followers.forEach(n =>
-			list.forEach(m => {
-				if (n === m) {
-					const index = list.indexOf(n);
-					list.splice(index, 1);
-				}
-			})
-		);
-		return list;
-	};
-} catch (error) {}
+function removeFollowers(followers, list) {
+	if (!Array.isArray(followers) || !Array.isArray(list)) {
+		return [];
+	}
+
+	const listSet = new Set(list);
+	followers.forEach(follower => {
+		listSet.delete(follower);
+	});
+
+	return Array.from(listSet);
+}
+
+const list = loadFollowers('follower.json');
+
+module.exports = followers => {
+	if (!list || list.length === 0) return list;
+	return removeFollowers(followers, list);
+};
